@@ -2,7 +2,7 @@
     "name": "Progressive web app test",
     "short_name": "PWA",
     "lang": "en-US",
-    "start_url": "https://hlsbyisaks.github.io/PWA_showcase/index.html/",
+    "start_url": "https://hlsbyisaks.[github].io/PWA_showcase/",
     "display": "standalone",
     "theme_color": "#0275d8",
     "icons": [
