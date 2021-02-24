@@ -5,7 +5,8 @@ self.addEventListener('install', function(event) {
     'main.css',
     'test.js',
     'index.html',
-    'manifest.json'
+    'manifest.json',
+    'sw.js'
     ];
 
     self.addEventListener('install', function(event) {
