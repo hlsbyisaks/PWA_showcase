@@ -4,7 +4,8 @@ self.addEventListener('install', function(event) {
     '/',
     'main.css',
     'test.js',
-    'index.html'
+    'index.html',
+    'manifest.json'
     ];
 
     self.addEventListener('install', function(event) {

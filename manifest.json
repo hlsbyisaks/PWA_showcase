@@ -2,11 +2,16 @@
     "name": "Progressive web app test",
     "short_name": "PWA",
     "lang": "en-US",
-    "start_url": "http://localhost/PWA_showcase/",
+    "start_url": "http://localhost/",
     "display": "standalone",
     "theme_color": "#0275d8",
     "icons": [
       {
+        "src": "maskable_homescreen192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
         "src": "homescreen192.png",
         "sizes": "192x192",
         "type": "image/png"
