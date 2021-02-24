@@ -6,7 +6,8 @@ self.addEventListener('install', function(event) {
     'test.js',
     'index.html',
     'manifest.json',
-    'sw.js'
+    'sw.js',
+    'homescreen192.png'
     ];
 
     self.addEventListener('install', function(event) {
@@ -18,20 +19,19 @@ self.addEventListener('install', function(event) {
             return cache.addAll(urlsToCache);
         })
     );
-
-    self.addEventListener('fetch', function(event) {
-        event.respondWith(
-          caches.match(event.request)
-            .then(function(response) {
-              // Cache hit - return response
-              if (response) {
-                return response;
-              }
-              return fetch(event.request);
-            }
-          )
-        );
-      });
     });
   });
 
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(function(response) {
+          // Cache hit - return response
+          if (response) {
+            return response;
+          }
+          return fetch(event.request);
+        }
+      )
+    );
+  });
