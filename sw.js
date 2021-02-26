@@ -2,12 +2,13 @@ self.addEventListener('install', function(event) {
     var CACHE_NAME = 'my-site-cache-v1';
     var urlsToCache = [
     '/',
-    'main.css',
+    'PWA_showcase'
+    /*'main.css',
     'test.js',
     'index.html',
     'manifest.json',
     'sw.js',
-    'homescreen192.png'
+    'homescreen192.png'*/
     ];
 
     self.addEventListener('install', function(event) {
