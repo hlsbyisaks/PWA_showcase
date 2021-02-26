@@ -1,6 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
 */
-@import url('/fonts/');
+@import url('/fonts/Nunito-Regular.ttf');
+@import url('/fonts/OpenSans-Regular.ttf');
 body {
     background-color: #e5e4f1;
 }
