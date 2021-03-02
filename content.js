@@ -1,4 +1,4 @@
-let contentArr = [
+let contentArr = [ /* obj containing text content */
     {
         h1: "Welcome",
         h2: "What is a PWA?",
@@ -12,26 +12,32 @@ let contentArr = [
 ]
 
 let contentCount = 0
-function nextContent(contentArr) {
+function nextContent(contentArr) {  /* Swapping content of page using content object */
     if (contentCount < contentArr.length) {contentCount += 1}
     $('.h1').html(contentArr[contentCount].h1)
     $('.h2').html(contentArr[contentCount].h2)
     $('.p').html(contentArr[contentCount].p)
 }
 
-$('.button').on("click", function(e) {
+$('.button').on("click", function(e) {  /* click function for NEXT button */
     nextContent(contentArr)
     e.preventDefault()
+
+    /* button animation */
     $('.buttonAnim').css({
-        "display": "inline-block",
         "margin-left": "15px",
-        "transition": "all 0.3s ease 0s"
     })
     setTimeout(() => {
         $('.buttonAnim').css({
-            "display": "inline-block",
             "margin-left": "0px",
-            "transition": "all 0.3s ease 0s"
+        })
+    }, 300);
+    $('.button').css({
+        "border-radius": "0px",
+    })
+    setTimeout(() => {
+        $('.button').css({
+            "border-radius": "10px",
         })
     }, 300);
 })
