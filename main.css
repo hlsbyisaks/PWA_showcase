@@ -1,15 +1,79 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
-*/
-/*@import url('/fonts/Nunito-Regular.ttf');
-@import url('/fonts/OpenSans-Regular.ttf');*/
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('./fonts/Nunito-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/Nunito-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Nunito-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/Nunito-Regular.ttf') format('svg'); /* Legacy iOS */
+} /* Header */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('./fonts/OpenSans-Regular.ttf') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/OpenSans-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/OpenSans-Regular.ttf') format('svg'); /* Legacy iOS */
+} /* Paragraph */
+
+:root {
+    --background-color: #343434;
+    --text-color: whitesmoke;
+  }
+
 body {
-    background-color: #e5e4f1;
-}
+    background-color: var(--background-color);
+} 
 
 h1, h2 {
     font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
 }
 
-p, button {
+p, .button, div {
     font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(0,0,0,0);
+    border: 1px solid var(--text-color);
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 6px;
+    width: auto;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.arrow {
+    border: solid var(--text-color);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transition: all 0.3s ease 0s;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.buttonAnim {
+    display: inline-block;
+    margin: 0px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.logo {
+    position: absolute;
+    width: 40px;
+    right: 1vw;
+    top: 1vw;
 }

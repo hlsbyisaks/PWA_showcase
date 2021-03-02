@@ -3,7 +3,7 @@ self.addEventListener('install', function(event) {
     var urlsToCache = [
     '/',
     'main.css',
-    'test.js',
+    'initializeSW.js',
     'index.html',
     'manifest.json',
     'sw.js',

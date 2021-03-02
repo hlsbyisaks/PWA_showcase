@@ -16,20 +16,23 @@
     <meta name="theme-color" content="#0275d8">
     <meta name="msapplication-navbutton-color" content="#0275d8">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="C:\Users\Isak Macbook\Documents\GitHub\PWA_showcase\index.html">
+    <meta name="msapplication-starturl" content="https://hlsbyisaks.github.io/PWA_showcase/">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="icon" type="png" sizes="192x192" href="homescreen192.png">
     <link rel="apple-touch-icon" type="png" sizes="192x192" href="homescreen.png">
 </head>
 <body>
-    <h1>Welcome</h1>
-    <h2>What is a PWA?</h2>
-    <p>A PWA (Progressive Web App) is a web based app, It supports installation to home screen, offline use and push notifications. Just like you would expect from a regular app. Stick around and try it out!</p>
-    <img src="homescreen192.png" alt="Image not available">
-    <button type="button">Dark</button>
-    <button type="button">Light</button>
+    <h1 class="h1">Welcome</h1>
+    <h2 class="h2">What is a PWA?</h2>
+    <p class="p">A PWA (Progressive Web App) is a web based app, however, unlike a traditional web app it supports installation to home screen, offline use and push notifications. Just like you would expect from a regular app. Stick around and try it out!</p>
+    <div class="center"><div class="button">Next<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right"></i></div></div></div>
     
-    <script src="test.js"></script>
+    
+    <img class="logo" src="homescreen192.png" alt="Image not available">
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="initializeSW.js"></script>
+    <script src="content.js"></script>
 </body>
 </html>
