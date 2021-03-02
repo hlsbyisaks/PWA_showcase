@@ -4,7 +4,7 @@
     "lang": "en-US",
     "start_url": "./",
     "display": "fullscreen",
-    "theme_color": "#0275d8",
+    "theme_color": "#000",
     "icons": [
       {
         "src": "maskable_homescreen192.png",
