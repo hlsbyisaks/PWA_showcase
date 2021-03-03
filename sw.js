@@ -7,6 +7,7 @@ self.addEventListener('install', function(event) {
     'index.html',
     'manifest.json',
     'sw.js',
+    'content.js',
     'homescreen192.png',
     'fonts/.'
     ];

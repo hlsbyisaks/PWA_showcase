@@ -21,11 +21,27 @@ function nextContent(contentArr, buttonId) {  /* Swapping content of page using 
     if (buttonId == "Next") {                   /* Also manages navigation buttons */
         if (contentCount < contentArr.length-1) {
             contentCount += 1
-            $('.prev').show()
+            $('.prev').css({
+                'border-color': 'var(--text-color)',
+                'color': 'var(--text-color)'
+            })
+            $('.prev > .buttonAnim > i').css({
+                'border-color': 'var(--text-color)',
+                'color': 'var(--text-color)'
+            })
         }
     } else {
         contentCount -= 1
-        if (contentCount == 0) { $('.prev').hide() } 
+        if (contentCount == 0) {
+            $('.prev').css({
+                'border-color': 'var(--background-color)',
+                'color': 'var(--background-color)'
+            })
+            $('.prev > .buttonAnim > i').css({
+                'border-color': 'var(--background-color)',
+                'color': 'var(--background-color)'
+            })
+        } 
     }
     
     $('.h1').html(contentArr[contentCount].h1)
@@ -39,14 +55,42 @@ $('.button').on("click", function(e) {  /* click function for NEXT button */
     nextContent(contentArr, $(this).data('id'))
     e.preventDefault()
 
-    $(this).children("div:first").css({ /* button animation */
-        "margin-left": "15px",
-    })
-    setTimeout(() => {
-        $(this).children("div:first").css({
-            "margin-left": "0px",
+    if ($(this).data('id') == 'Prev') {
+        $(this).children("div:nth-child(1)").css({ /* button animation */
+            "margin-right": "5px",
         })
-    }, 300);
+        setTimeout(() => {
+            $(this).children("div:nth-child(1)").css({
+                "margin-right": "0px",
+            })
+        }, 300);
+        $(".left2").css({ /* button animation */
+            'margin-right': '-5px'
+        })
+        setTimeout(() => {
+            $(".left2").css({
+                'margin-right': '0px'
+            })
+        }, 300);
+    } else {
+        $(this).children("div:first").css({ /* button animation */
+            "margin-left": "5px"
+        })
+        setTimeout(() => {
+            $(this).children("div:first").css({
+                "margin-left": "0px",
+            })
+        }, 300);
+        $(".right2").css({ /* button animation */
+            'margin-left': '-5px'
+        })
+        setTimeout(() => {
+            $(".right2").css({
+                'margin-left': '0px'
+            })
+        }, 300);
+        
+    }
     $(this).css({
         "border-radius": "0px",
     })

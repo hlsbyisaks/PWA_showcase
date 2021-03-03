@@ -88,8 +88,9 @@ p, .button, div {
     transition: all 0.3s ease 0s;
 }
 
-.prev {
-    display: none;
+.prev, .prev > .buttonAnim > i {
+    border-color: var(--background-color);
+    color: var(--background-color);
 }
 
 .logo {
