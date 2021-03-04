@@ -31,7 +31,7 @@ function nextContent(contentArr, buttonId) {  /* Swapping content of page using 
             })
         }
     } else {
-        contentCount -= 1
+        if (contentCount > 0) {contentCount -= 1}
         if (contentCount == 0) {
             $('.prev').css({
                 'border-color': 'var(--background-color)',
