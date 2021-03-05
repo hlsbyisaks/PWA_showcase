@@ -111,3 +111,7 @@ function showSlides(contentCount) { /* Func for dots visual navigation */
     }
     dots[contentCount].className += " active";
 }
+
+$('.pushButton').on("click", function() {
+    displayNotification()
+})

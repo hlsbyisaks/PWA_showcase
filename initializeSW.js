@@ -1,17 +1,4 @@
-//Initialize service worker @sw.js
-/* if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  } */
-
-//SW and PUSH initialization
+//SW and push initialization
 if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.log('Service Worker and Push is supported');
 
@@ -27,4 +14,22 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 } else {
   console.warn('Push messaging is not supported');
   pushButton.textContent = 'Push Not Supported';
+}
+
+
+//Prompt permission push notifications
+Notification.requestPermission(function(status) {
+  console.log('Notification permission status:', status);
+});
+
+//Runs a push from script!
+pushMessages = ['Hello world!','Hi..','yeees helloo', 'Ok, thats enough', '...']
+let pushCounter = 0
+function displayNotification() {
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification(pushMessages[pushCounter]);
+      if (pushCounter < pushMessages.length-1)pushCounter += 1
+    });
+  }
 }
