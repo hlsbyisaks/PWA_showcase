@@ -25,7 +25,9 @@ Improved offline support
 Push notifications from script. No support for server side. Temporary button to trigger. However i think thats the way to go for me. Self triggered push notes.
 
 8/3
-
+Andriod installation guide
+Improved navigation
+End screen with directions to survey
 
 Bugs: 
 img "alt" takes more horizontal space which creates a scroll bar.
@@ -41,6 +43,8 @@ cookies?
 design
 3rd color
 Improve icons
+iOS install guide
+Skip button to pass other OS install guide
 
 Frågor till sebastian:
 Behövs push notiser? Just nu används gratis hosting på github. Verkar som pushnotiser kräver mer backend än vad github erbjuder.
