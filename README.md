@@ -24,6 +24,9 @@ Improved offline support
 5/3
 Push notifications from script. No support for server side. Temporary button to trigger. However i think thats the way to go for me. Self triggered push notes.
 
+8/3
+
+
 Bugs: 
 img "alt" takes more horizontal space which creates a scroll bar.
 Icons 193px, not 192 as intended.

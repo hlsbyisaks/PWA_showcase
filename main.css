@@ -54,14 +54,19 @@ p, .button, div {
     width: 97vw;
 }
 
-.button {
-    background-color: rgb(0,0,0,0);
+.button, .pushButton, .navBtn {
+    background-color: #34393B;
     border: 2px solid var(--text-color);
     font-size: 14px;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
     padding: 10px;
     width: auto;
+}
+
+.navBtn {
+    display: none;
+    margin-bottom: 5px;
 }
 
 .arrow {
@@ -117,4 +122,11 @@ p, .button, div {
 
 .active, .dot:hover {
     background-color: #717171;
+}
+
+.img {
+    width: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    display: none;
 }
