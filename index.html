@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon" type="png" sizes="192x192" href="homescreen192.png">
 </head>
 <body>
+    <div class="bar topbar">
+        <h2>The PWA Showcase</h2>
+        <img class="logo" src="homescreen192.png" alt="Image not available">
+    </div>
     <h1 class="h1">Welcome</h1>
     <h2 class="h2">What is a PWA?</h2>
     <p class="p">A PWA (Progressive Web App) is a web based app, however, unlike a traditional web app it supports installation to home screen, offline use and push notifications. Just like you would expect from a regular app. Stick around and try it out!</p>
@@ -35,21 +39,25 @@
     <div class="center"><a href="https://google.com"><div class="navBtn surveyButton">Survey</div></a></div>
     <div class="center"><div class="navBtn androidButton">Android install</div><div class="navBtn iosButton">iOS install</div></div>
     
-    <div class="nav">
-        <div class="dotContainer">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <div class="center">
-            <div class="button prev" data-id="Prev"><div class="buttonAnim"><i class="arrow left left2"></i><i class="arrow left"></i></div>Prev</div>
-            <div class="button next"data-id="Next">Next<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right right2"></i></div></div>
+    <div class="bottomBar">
+        <div class="arcBottom"></div>
+        <div class="bar bottomBarContent">
+            <div class="nav">
+                <div class="dotContainer">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="center">
+                    <div class="button prev" data-id="Prev"><div class="buttonAnim"><i class="arrow left left2"></i><i class="arrow left"></i></div>Prev</div>
+                    <div class="button next"data-id="Next">Next<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right right2"></i></div></div>
+                </div>
+            </div>
         </div>
     </div>
-
     
     
-    <img class="logo" src="homescreen192.png" alt="Image not available">
+    
 
     <script src="jquery-3.5.1.js"></script>
     <script src="initializeSW.js"></script>

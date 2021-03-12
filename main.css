@@ -21,15 +21,18 @@
 :root {
     --background-color: #343434;
     --text-color: whitesmoke;
+    --bar-color: #242424;
   }
 
 body {
     background-color: var(--background-color);
+    margin: 0px;
 } 
 
 h1, h2 {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
+    text-align: center;
 }
 
 p, .button, div {
@@ -37,12 +40,21 @@ p, .button, div {
     color: var(--text-color);
 }
 
+p {
+    margin: 5vw;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    bottom: 10vh;
+    /* position: absolute; */
+    /* bottom: 5vh; */
     width: 97vw;
 }
 
@@ -55,7 +67,7 @@ p, .button, div {
 }
 
 .button, .pushButton, .navBtn {
-    background-color: #34393B;
+    background-color: rgba(0,0,0,0);
     border: 2px solid var(--text-color);
     font-size: 14px;
     transition: all 0.3s ease 0s;
@@ -67,6 +79,15 @@ p, .button, div {
 .navBtn {
     display: none;
     margin-bottom: 5px;
+}
+
+.surveyButton {
+    display: block;
+    background-color: green;
+    border-color: transparent;
+    width: 20vw;
+    text-align: center;
+    display: none;
 }
 
 a {
@@ -103,10 +124,10 @@ a {
 }
 
 .logo {
-    position: absolute;
-    width: 40px;
-    right: 1vw;
-    top: 1vw;
+    border: 1px solid #343434;
+    padding: 2px;
+    border-radius: 50%;
+    width: 8vh;
 }
 
 .dotCountainer {
@@ -134,3 +155,40 @@ a {
     border-radius: 10px;
     display: none;
 }
+
+.bar {
+    height: 10vh;
+    background-color: var(--bar-color);
+}
+
+.bottomBar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bar-color);
+}
+
+.arcBottom {
+    background-color: var(--background-color);
+    height: 4vh;
+    border-radius: 50%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.bottomBarContent {
+    height: 12vh;
+    padding: 10px;
+}
+
+.topbar > h2 {
+    margin: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
