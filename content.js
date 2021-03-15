@@ -153,17 +153,9 @@ $('.pushButton').on("click", function() {
     }, 300);
 })
 
-$('.androidButton').on("click", function(e) {
-    contentCount = 3
-    nextContent(contentArr)
-    e.preventDefault()
-    $('.navBtn').hide()
-    $('.button').show()
-    $('.nav').show()
-})
-
 $('.iosButton').on("click", function(e) {
     contentCount = 3 //change me to ios start page
+    localStorage.setItem('currentPage', contentCount)
     nextContent(contentArr)
     e.preventDefault()
     $('.navBtn').hide()
