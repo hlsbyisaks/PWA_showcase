@@ -78,16 +78,19 @@ img {
 
 .navBtn {
     display: none;
-    margin-bottom: 5px;
+    margin-top: 2vh;
 }
 
 .surveyButton {
     display: block;
-    background-color: green;
+    background-color: #24a0ed;
     border-color: transparent;
-    width: 20vw;
+    padding: 5vw;
+    width: 25vw;
     text-align: center;
     display: none;
+    font-weight: 800;
+    border: 2px solid whitesmoke;
 }
 
 a {
