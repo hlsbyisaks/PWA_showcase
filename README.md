@@ -29,23 +29,30 @@ Andriod installation guide
 Improved navigation
 End screen with directions to survey
 
+12/3
+Design reworked. Added familiar elements, top bar, bottom bar, logo design, title, moved buttons etc.
+
+15/3
+User agent - Added device specific install guide
+Localstorage. Saves current page for next visit. so so working.
+Button design.
+
+
 Bugs: 
 img "alt" takes more horizontal space which creates a scroll bar.
 Icons 193px, not 192 as intended.
+localstorage, might not work live. Maybe better to remove. Replace with skip button?
 
 Todo:
-COntent
-Installation guide, iOS, android. Maybe browser dependant?
-Interactive elements
-Push notice
-Editing of something, to show offline
+Content
 cookies?
 design
 3rd color
 Improve icons
 iOS install guide
-Skip button to pass other OS install guide
+Info/intro - about me, about the study etc
 
 Frågor till sebastian:
 Behövs push notiser? Just nu används gratis hosting på github. Verkar som pushnotiser kräver mer backend än vad github erbjuder.
 ev. kan skolan sponsra hosting? binerokod eller liknande.
+localstorage, might not work live. Maybe better to remove. Replace with skip button?
