@@ -22,16 +22,18 @@ let contentIos = [ /* obj containing text content */
     {    
         h1: "iOS",
         h2: "Installation guide",
-        p: '1. From the bottom of your screen, swipe up to reveal the alternatives menu.',
+        p: '1. From the bottom of your screen, open the alternatives menu.',
         img1: 'images/install_ios_1.jpg',
-        p2:'2. Navigate to, and press, "Add to Home screen". You might need to scroll.',
-        img2: '',
+        p2:'2. Swipe up to reveal the whole menu.',
+        img2: 'images/install_ios_2.jpg',
     },
     {    
         h1: "iOS",
         h2: "Installation guide",
-        p:'3. Add a name and continue.',
-        img1: 'images/install_android_3.jpg'
+        p: 'Scroll down and press "Add to Home screen".',
+        img1: "images/install_ios_3.jpg",
+        p2:'4. Add a name and continue.',
+        img2: 'images/install_ios_4.png'
     },
     {    
         h1: "iOS",
