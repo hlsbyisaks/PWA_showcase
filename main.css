@@ -194,4 +194,12 @@ a {
     align-items: space-between;
 }
 
-
+@media  only screen and (max-height: 600px) {
+    h1, h2, p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

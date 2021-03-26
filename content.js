@@ -7,7 +7,11 @@ if(localStorage.getItem('currentPage') == null) {
 
 
 if (navigator.userAgent.includes("Android")) { contentArr = contentAndroid } //Checks user OS for appropriate install guide
-else { contentArr = contentIos}
+else { 
+    contentArr = contentIos
+    $('<span/>', {"class": "dot"}).appendTo(".dotContainer")
+    $('<span/>', {"class": "dot"}).appendTo(".dotContainer")
+}
 nextContent(contentArr, "Prev")
 
 function nextContent(contentArr, buttonId) {  /* Swapping content of page using content object */

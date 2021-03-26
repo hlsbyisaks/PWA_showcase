@@ -2,12 +2,12 @@ let contentAndroid = [ /* obj containing text content */
     {
         h1: "Welcome",
         h2: "Who am I & what is this?",
-        p: "I am a student at the faculty of Media Technology at Malmö University, studying web development. <br><br>As a part of my bachelors thesis i developed this app to showcase core functionalities of a concept called progressive web apps which simplifies a lot of app development in terms of distribution and platform adaptation."
+        p: "I am a student at the faculty of Media Technology at Malmö University, studying web development. As a part of my bachelors thesis i developed this app to showcase core functionalities of a concept called progressive web apps which simplifies a lot of app development in terms of distribution and platform adaptation."
     },
     {
-        h1: "Welcome",
+        h1: "",
         h2: "What is a PWA?",
-        p: "A PWA (Progressive Web App) is a web based app, however, unlike traditional web apps it supports installation to home screen, offline use and push notifications. Just like you would expect from a regular app. These advantages makes PWA a viable choice for many businesses. Other advantages are: low space requirements, availability in areas with poor internet coverage and independent of platform specific app marketplaces with associated sales fees. <br><br>Stick around and try it out!"
+        p: "A PWA (Progressive Web App) is a web based app, opposed to a native app being installed on the platforms operating system. Traditionally, web apps lacked support for certain key functionalities of app development. That is why we today see PWAs which support installation to home screen, offline use and push notifications. Just like you would expect from a native app. These advantages makes PWA a viable choice for many businesses. Other advantages are: low space requirements, availability in areas with poor internet coverage and independent of platform specific app marketplaces with associated sales fees. <br>Stick around and try it out!"
     },
     {
         h1: "Introduction",
