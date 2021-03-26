@@ -50,6 +50,7 @@ function nextContent(contentArr, buttonId) {  /* Swapping content of page using 
     $('.h1').html(contentArr[contentCount].h1)
     $('.h2').html(contentArr[contentCount].h2)
     $('.p').html(contentArr[contentCount].p)
+    $('.next').html(contentArr[contentCount].btn)
     if (contentArr[contentCount].img1) {
         $('.img1').show()
         $('.img1').attr('src', contentArr[contentCount].img1)
