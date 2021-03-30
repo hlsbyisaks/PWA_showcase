@@ -74,6 +74,7 @@ function nextContent(contentArr, buttonId) {  /* Swapping content of page using 
 
     if (contentCount == contentArr.length-1) {
         $('.navBtn').show()
+        if (navigator.userAgent.includes("iPhone")) { $('.pushButton').hide()}
         $('.button').hide()
         $('.dotContainer').hide()       
     }
