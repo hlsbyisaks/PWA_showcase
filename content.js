@@ -6,11 +6,12 @@ if(localStorage.getItem('currentPage') == null) {
 } 
 
 
-if (navigator.userAgent.includes("Android")) { contentArr = contentAndroid } //Checks user OS for appropriate install guide
+if (navigator.userAgent.includes("Android")) { 
+    contentArr = contentAndroid
+    $('<span/>', {"class": "dot"}).appendTo(".dotContainer")
+} //Checks user OS for appropriate install guide
 else { 
     contentArr = contentIos
-    $('<span/>', {"class": "dot"}).appendTo(".dotContainer")
-    $('<span/>', {"class": "dot"}).appendTo(".dotContainer")
 }
 nextContent(contentArr, "Prev")
 
@@ -71,6 +72,9 @@ function nextContent(contentArr, buttonId) {  /* Swapping content of page using 
         $('.img3').show()
         $('.img3').attr('src', contentArr[contentCount].img3)
     } else {$('.img3').hide()}
+    if (contentArr[contentCount].vid) {
+        $('.vid').show()
+    } else { $('.vid').hide()}
 
     if (contentCount == contentArr.length-1) {
         $('.navBtn').show()

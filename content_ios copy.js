@@ -8,7 +8,7 @@ let contentIos = [ /* obj containing text content */
     {
         h1: "",
         h2: "What is a PWA?",
-        p: "A PWA (Progressive Web App) is a web based app, opposed to a native app being installed on the platforms operating system. Traditionally, web apps lacked support for certain key functionalities of app development. That is why we today see PWAs which support installation to home screen, offline use, push notifications and afull screen experience. Just like you would expect from a native app. These advantages makes PWA a viable choice for many businesses. Other advantages are: low space requirements, availability in areas with poor internet coverage and independent of platform specific app marketplaces with associated sales fees. <br>Stick around and try it out!",
+        p: "A PWA (Progressive Web App) is a web based app, opposed to a native app being installed on the platforms operating system. Traditionally, web apps lacked support for certain key functionalities of app development. That is why we today see PWAs which support installation to home screen, offline use and push notifications. Just like you would expect from a native app. These advantages makes PWA a viable choice for many businesses. Other advantages are: low space requirements, availability in areas with poor internet coverage and independent of platform specific app marketplaces with associated sales fees. <br>Stick around and try it out!",
         btn: 'Purpose<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right right2"></i>'
     },
     {
@@ -24,17 +24,33 @@ let contentIos = [ /* obj containing text content */
         btn: 'Next<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right right2"></i>'
     },
     {    
-        h1: "",
-        h2: "",
-        p: '',
-        img1: '',
-        vid: 'images/install_ios.mp4'
+        h1: "iOS",
+        h2: "Installation guide",
+        p: '1. From the bottom of your screen, open the alternatives menu.',
+        img1: 'images/install_ios_1.JPG',
+    },
+    {    
+        h1: "iOS",
+        h2: "Installation guide",
+        p:'2. Swipe up to reveal the whole menu.',
+        img1: 'images/install_ios_2.jpg',
+    },
+    {    
+        h1: "iOS",
+        h2: "Installation guide",
+        p: '3. Scroll down and press "Add to Home screen".',
+        img1: "images/install_ios_3.jpg",
+    },
+    {    
+        h1: "iOS",
+        h2: "Installation guide",
+        p:'4. Add a name and continue.',
+        img1: 'images/install_ios_4.PNG'
     },
     {    
         h1: "iOS",
         h2: "Installation guide",
         p:'The installation is complete, open this app via your home screen for a fullscreen experience.',
-        vid: ''
     },
     {    
         h1: "Thank you",
@@ -45,6 +61,3 @@ let contentIos = [ /* obj containing text content */
         img2: ''
     }
 ]
-
-var vid = document.getElementById("iosVideo");
-vid.playbackRate = 0.5;
