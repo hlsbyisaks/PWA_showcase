@@ -2,7 +2,7 @@ let contentAndroid = [ /* obj containing text content */
     {
         h1: "Welcome",
         h2: "Who am I & what is this?",
-        p: "I am a student at the faculty of Media Technology at Malmö University, studying web development. As a part of my bachelors thesis i developed this app to showcase core functionalities of a concept called progressive web apps which simplifies a lot of app development in terms of distribution and platform adaptation.",
+        p: "I am a student at the faculty of Media Technology at Malmö University, studying web development. As a part of my bachelors thesis I developed this app to showcase core functionalities of a concept called progressive web apps which simplifies a lot of app development in terms of distribution and platform adaptation.",
         btn: 'What is a PWA<div class="buttonAnim"><i class="arrow right"></i><i class="arrow right right2"></i>'
     },
     {
